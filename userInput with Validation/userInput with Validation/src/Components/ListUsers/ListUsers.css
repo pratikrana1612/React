@@ -1,0 +1,13 @@
+.second_div {
+  height: auto;
+}
+.users {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.users li {
+  border: 1px solid black;
+  padding: 0.5rem;
+  font-weight: 600;
+}

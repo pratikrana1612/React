@@ -1,0 +1,17 @@
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+label {
+  font-weight: 900;
+}
+input {
+  padding: 0.2rem 0;
+}
+input:focus {
+  outline: 3px solid purple;
+}
