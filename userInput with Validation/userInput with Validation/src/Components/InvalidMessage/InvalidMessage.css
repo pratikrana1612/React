@@ -3,10 +3,13 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
+  top: 0;
+  left: 0;
 }
 .message_box {
   position: absolute;
   top: 30%;
+  left: 30%;
 }
 .message_title {
   background-color: rgb(61, 8, 61);
@@ -28,4 +31,14 @@
 .message_text button {
   position: absolute;
   right: 2rem;
+}
+@media (max-width: 768px) {
+  .message_box {
+    left: 10%;
+
+    width: 80%;
+  }
+  .message_text {
+    width: 100%;
+  }
 }

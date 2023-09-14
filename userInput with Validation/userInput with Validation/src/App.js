@@ -3,6 +3,7 @@ import "./index.css";
 import UserInput from "./Components/UserInput/UserInput";
 import ListUsers from "./Components/ListUsers/ListUsers";
 import InvalidMessage from "./Components/InvalidMessage/InvalidMessage";
+import Wrapper from "./Components/Helper/Wrapper";
 
 function App() {
   const [users, changeUsers] = useState([]);
@@ -20,7 +21,7 @@ function App() {
     changeIsValid({ isValid: isClick, message: "" });
   }
   return (
-    <div>
+    <Wrapper>
       {!isValid.isValid && (
         <InvalidMessage
           text={isValid.message}
@@ -29,7 +30,7 @@ function App() {
       )}
       <UserInput addUser={addUser}></UserInput>
       <ListUsers users={users}></ListUsers>
-    </div>
+    </Wrapper>
   );
 }
 
